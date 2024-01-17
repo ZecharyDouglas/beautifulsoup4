@@ -4,7 +4,7 @@
 
 import vertexai
 from vertexai.preview.generative_models import GenerativeModel, Part
-
+           
 
 def generate_text(project_id: str, location: str) -> str:
     # Initialize Vertex AI

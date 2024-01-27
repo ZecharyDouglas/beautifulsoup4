@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Terms of Service Analyzer",
+  "version": "1.0",
+  "description": "Analyzes the content of the active webpage and returns commentary on potentially harmful legal contractual obligations",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "/placeholderIcon.png"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
